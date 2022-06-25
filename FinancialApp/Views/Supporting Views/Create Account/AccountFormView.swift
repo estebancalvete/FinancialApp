@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct AccountFormView: View {
+    private let type = "creditcard"
+    
+    init() {
+        
+    }
+    
     var body: some View {
         Text("Account Form View")
     }

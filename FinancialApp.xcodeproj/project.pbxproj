@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0653FA2867656400BF3560 /* FormTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0653F92867656400BF3560 /* FormTextField.swift */; };
 		5B88E22C2860AE2000558082 /* FinancialAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E22B2860AE2000558082 /* FinancialAppApp.swift */; };
 		5B88E22E2860AE2000558082 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B88E22D2860AE2000558082 /* ContentView.swift */; };
 		5B88E2302860AE2300558082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B88E22F2860AE2300558082 /* Assets.xcassets */; };
@@ -55,6 +56,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B0653F92867656400BF3560 /* FormTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTextField.swift; sourceTree = "<group>"; };
 		5B88E2282860AE2000558082 /* FinancialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinancialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B88E22B2860AE2000558082 /* FinancialAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialAppApp.swift; sourceTree = "<group>"; };
 		5B88E22D2860AE2000558082 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -234,11 +236,12 @@
 			isa = PBXGroup;
 			children = (
 				5B88E2592860B28300558082 /* AccountFormView.swift */,
-				5B88E25B2860B2AD00558082 /* CardView.swift */,
-				5B88E25D2860B2C500558082 /* ColorButtonMenu.swift */,
-				5B88E25F2860B2D800558082 /* ColorView.swift */,
 				5B88E2612860B2ED00558082 /* FormNameView.swift */,
 				5B88E2632860B30D00558082 /* CreditCardTypeMenuView.swift */,
+				5B88E25B2860B2AD00558082 /* CardView.swift */,
+				5B88E25F2860B2D800558082 /* ColorView.swift */,
+				5B88E25D2860B2C500558082 /* ColorButtonMenu.swift */,
+				5B0653F92867656400BF3560 /* FormTextField.swift */,
 			);
 			path = "Create Account";
 			sourceTree = "<group>";
@@ -398,6 +401,7 @@
 				5B88E27B2860BA6E00558082 /* Palette+Color.swift in Sources */,
 				5B88E2852860BBA400558082 /* LengthFormatters.swift in Sources */,
 				5B88E27D2860BB2400558082 /* BoolOptional+Extension.swift in Sources */,
+				5B0653FA2867656400BF3560 /* FormTextField.swift in Sources */,
 				5B88E25A2860B28300558082 /* AccountFormView.swift in Sources */,
 				5B88E2952860BCD200558082 /* CoreDataManager.swift in Sources */,
 				5B88E2582860B25F00558082 /* HomeSubmenuView.swift in Sources */,
