@@ -10,6 +10,7 @@ import SwiftUI
 struct AccountHeaderView: View {
     var body: some View {
         HStack(alignment: .center) {
+            Image("avatar")
             VStack(alignment: .leading, spacing: -8) {
                 Text("Hi, Esteban Calvete")
                     .customFont(.custom(.bold, 24))
@@ -18,15 +19,14 @@ struct AccountHeaderView: View {
             }
             .foregroundColor(.basePrussianBlue)
             Spacer()
-            Image("avatar")
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, 10)
     }
 }
 
 struct AccountHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         AccountHeaderView()
-            .previewLayout(.fixed(width: 600, height: 80))
+            //.previewLayout(.fixed(width: 600, height: 80))
     }
 }

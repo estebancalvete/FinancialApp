@@ -30,7 +30,6 @@ struct HomeSubmenuView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                 }
-                Spacer()
                 Button(action: {}) {
                     VStack {
                         Image("icon-receive")
@@ -41,7 +40,6 @@ struct HomeSubmenuView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                 }
-                Spacer()
                 Button(action: {}) {
                     VStack {
                         Image("icon-invoices")
@@ -52,7 +50,6 @@ struct HomeSubmenuView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                 }
-                Spacer()
                 Button(action: {}) {
                     VStack {
                         Image("icon-bills")
@@ -63,10 +60,11 @@ struct HomeSubmenuView: View {
                     .background(Color.white)
                     .cornerRadius(10)
                 }
+                Spacer()
             }
             .foregroundColor(.basePrussianBlue)
-            .padding(10)
         }
+        .padding(10)
         .background(Color.baseWhite)
     }
 }

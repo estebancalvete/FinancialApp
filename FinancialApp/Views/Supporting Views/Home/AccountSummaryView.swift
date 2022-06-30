@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AccountSummaryView: View {
-    private var type = "creditcard"
+    private var type = "creditcar"
     
     var body: some View {
         VStack {
@@ -18,7 +18,6 @@ struct AccountSummaryView: View {
                 debitCard
             }
         }
-        .padding(.horizontal, 10)
     }
 }
 
@@ -112,6 +111,8 @@ private extension AccountSummaryView {
                 }
                 .listRowBackground(Color.baseWhite)
             }
+            .listStyle(GroupedListStyle())
+            .padding(.horizontal, -10)
             .frame(height: 150)
         }
         .padding(.top, 10)
@@ -140,7 +141,6 @@ private extension AccountSummaryView {
                     TransactionItemView()
                 }
             }
-            .padding(.horizontal, 10)
         }
         .padding(.horizontal, 10)
     }
