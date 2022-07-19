@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AccountSummaryView: View {
-    private var type = "creditcar"
+    private var type = "creditcard"
     
     var body: some View {
         VStack {
@@ -17,6 +17,11 @@ struct AccountSummaryView: View {
             } else {
                 debitCard
             }
+        }
+        .padding(.horizontal, 10)
+        .onAppear {
+            UITableView.appearance().tableFooterView = UIView()
+            UITableView.appearance().backgroundColor = UIColor.clear
         }
     }
 }
@@ -111,16 +116,16 @@ private extension AccountSummaryView {
                 }
                 .listRowBackground(Color.baseWhite)
             }
-            .listStyle(GroupedListStyle())
-            .padding(.horizontal, -10)
+            //.listStyle(GroupedListStyle())
+            //.padding(.horizontal, -10)
             .frame(height: 150)
         }
         .padding(.top, 10)
         .background(Color.baseWhite)
-        .onAppear {
-            UITableView.appearance().tableFooterView = UIView()
-            UITableView.appearance().backgroundColor = UIColor.clear
-        }
+        //.onAppear {
+        //    UITableView.appearance().tableFooterView = UIView()
+        //    UITableView.appearance().backgroundColor = UIColor.clear
+        //}
     }
     
     var debitCard: some View {
@@ -134,13 +139,14 @@ private extension AccountSummaryView {
                     Spacer()
                 }
                 Divider()
-                    .padding(.bottom, 2)
+                    .padding(.bottom, 10)
             }
             VStack {
                 ForEach(0..<3) { _ in
                     TransactionItemView()
                 }
             }
+            .padding(.horizontal, 10)
         }
         .padding(.horizontal, 10)
     }

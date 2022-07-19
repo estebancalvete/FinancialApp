@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct AccountFormView: View {
+    @State var firstName = "First Name"
+    @State var lastName = "Last Name"
+    @State var creditLimit = "Credit Limit"
+    
     private let type = "creditcard"
     
     init() {
@@ -22,7 +26,9 @@ struct AccountFormView: View {
             Section {
                 FirstNameView()
                 LastNameView()
-                CardLimitView()
+                if type == "creditcard" {
+                    CardLimitView()
+                }
             }
             .listRowBackground(Color.baseWhite)
             .listRowInsets(EdgeInsets(top: 0, leading: 10, bottom: 0, trailing: 0))

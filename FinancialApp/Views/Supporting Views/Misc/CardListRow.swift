@@ -83,5 +83,6 @@ struct CardListRow: View {
 struct CardListRow_Previews: PreviewProvider {
     static var previews: some View {
         CardListRow()
+            .previewLayout(.fixed(width: 300, height: 180))
     }
 }
